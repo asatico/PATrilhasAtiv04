@@ -4,14 +4,13 @@ class Program
 {
     static void Main()
     {
-       Console.Clear();
-
-     string num; 
-     Console.WriteLine("Digite alguns números");
-     num = (Console.ReadLine());
-
-     int resultado = int.TryParse(num, out int convertido) ? convertido : 0;
-     Console.WriteLine(resultado);
+      string numeroTexto = "123";
+        if (int.TryParse(numeroTexto, out int numero)){
+            Console.WriteLine(numero); // Saída: 123
+        }
+        else{
+            Console.WriteLine("Conversão falhou!");
+        }
       
 
         Console.WriteLine("Presione algo para sair . . . ");
